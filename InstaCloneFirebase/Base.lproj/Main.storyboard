@@ -100,14 +100,40 @@
                     <view key="view" contentMode="scaleToFill" id="J0U-jI-J1U">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Select image" translatesAutoresizingMaskIntoConstraints="NO" id="RrO-xM-FWZ">
+                                <rect key="frame" x="36" y="99" width="320" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-j0-R2M">
+                                <rect key="frame" x="36" y="409" width="320" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eR-R0-NcB">
+                                <rect key="frame" x="124" y="515" width="144" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="egJ-2t-QOB" eventType="touchUpInside" id="fh2-Ci-Xs9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TcT-oQ-pgu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="mkf-xS-rQe"/>
+                    <connections>
+                        <outlet property="commentText" destination="XNZ-j0-R2M" id="Mnv-Ek-m01"/>
+                        <outlet property="imageView" destination="RrO-xM-FWZ" id="BfY-pl-IUA"/>
+                        <outlet property="uploadButton" destination="4eR-R0-NcB" id="j8g-KR-sMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geT-Wc-DYP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912.2137404580151" y="315.49295774647891"/>
+            <point key="canvasLocation" x="1910.6870229007632" y="350.7042253521127"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ucF-vY-IFF">
@@ -180,6 +206,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Select image" width="302" height="271"/>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
