@@ -8,7 +8,8 @@
 import UIKit
 import FirebaseCore
 import FirebaseStorage
-
+import FirebaseFirestoreInternal
+import FirebaseAuth
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
@@ -63,7 +64,22 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                         
                         if error == nil {
                             let imageUrl = url?.absoluteString
-                            print(imageUrl)
+                            
+                            //DATABASE
+//Se crea el Firestore y despues una refencia de DocumentReference y se agrega los valores dentro de un diccionario de tipo [String : Any]
+                            let firestoreDatabase = Firestore.firestore()
+                            var firestoreReference : DocumentReference? = nil
+                            let firestorePost = ["imageUrl" : imageUrl!, "postedBy" : Auth.auth().currentUser!.email!, "postComment" : self.commentText.text!, "date" : FieldValue.serverTimestamp(), "likes" : 0] as [String : Any]
+                            
+                            firestoreReference = firestoreDatabase.collection("Posts").addDocument(data: firestorePost, completion: { (error) in
+                                if error != nil {
+                                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                                } else {
+                                    self.imageView.image = UIImage(named: "SelectImage")
+                                    self.commentText.text = ""
+                                    self.tabBarController?.selectedIndex = 0
+                                }
+                            })
                             
                         }
                     }
