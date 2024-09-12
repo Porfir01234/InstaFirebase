@@ -18,6 +18,7 @@
 		F1E984C72C90A8EB00380F34 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E984C62C90A8EB00380F34 /* FeedViewController.swift */; };
 		F1E984C92C90A94A00380F34 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E984C82C90A94A00380F34 /* UploadViewController.swift */; };
 		F1E984CB2C90A96C00380F34 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E984CA2C90A96C00380F34 /* SettingsViewController.swift */; };
+		F1E984CF2C93502B00380F34 /* FeedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E984CE2C93502B00380F34 /* FeedCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F1E984C62C90A8EB00380F34 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F1E984C82C90A94A00380F34 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		F1E984CA2C90A96C00380F34 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F1E984CE2C93502B00380F34 /* FeedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				F1D07D172C8F4F5000296170 /* SceneDelegate.swift */,
 				F1D07D192C8F4F5000296170 /* ViewController.swift */,
 				F1E984C62C90A8EB00380F34 /* FeedViewController.swift */,
+				F1E984CE2C93502B00380F34 /* FeedCellTableViewCell.swift */,
 				F1E984C82C90A94A00380F34 /* UploadViewController.swift */,
 				F1E984CA2C90A96C00380F34 /* SettingsViewController.swift */,
 				F1D07D1B2C8F4F5000296170 /* Main.storyboard */,
@@ -221,6 +224,7 @@
 			files = (
 				F1D07D1A2C8F4F5000296170 /* ViewController.swift in Sources */,
 				F1E984C92C90A94A00380F34 /* UploadViewController.swift in Sources */,
+				F1E984CF2C93502B00380F34 /* FeedCellTableViewCell.swift in Sources */,
 				F1D07D162C8F4F5000296170 /* AppDelegate.swift in Sources */,
 				F1E984C72C90A8EB00380F34 /* FeedViewController.swift in Sources */,
 				F1D07D182C8F4F5000296170 /* SceneDelegate.swift in Sources */,
