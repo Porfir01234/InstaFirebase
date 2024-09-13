@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  InstaCloneFirebase
 //
-//  Created by Jazmin on 10/09/24.
+//  Created by Porfirio on 10/09/24.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func logoutButton(_ sender: UIButton) {
-// para decirle a FireBase que se ha cerrado la sesion del usuario
+// Cerrar Sesión 
         do {
            try Auth.auth().signOut()
            performSegue(withIdentifier: "toViewController", sender: nil)

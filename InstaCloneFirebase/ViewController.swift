@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  InstaCloneFirebase
 //
-//  Created by Jazmin on 09/09/24.
+//  Created by Porfirio on 09/09/24.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import FirebaseAuth
 class ViewController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
- //Proyecto listo para continuar
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -234,24 +234,35 @@
                                                         <action selector="likeButtonClicked:" destination="PKo-xI-1Rf" eventType="touchUpInside" id="c4u-Yb-aK4"/>
                                                     </connections>
                                                 </button>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SD0-MO-1Yd">
+                                                    <rect key="frame" x="278" y="11" width="95" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="GBx-K1-VZh" firstAttribute="top" secondItem="orU-QX-kg2" secondAttribute="topMargin" id="4yj-6d-WBt"/>
                                                 <constraint firstItem="bbf-ti-aCM" firstAttribute="top" secondItem="Ldh-DM-oNg" secondAttribute="bottom" constant="54" id="5kQ-RV-ZT0"/>
                                                 <constraint firstItem="GBx-K1-VZh" firstAttribute="leading" secondItem="Ldh-DM-oNg" secondAttribute="leading" id="9Eh-tS-Wbb"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BkF-GX-PxZ" secondAttribute="bottom" constant="-11" id="Aie-FR-Gor"/>
+                                                <constraint firstItem="GBx-K1-VZh" firstAttribute="baseline" secondItem="SD0-MO-1Yd" secondAttribute="baseline" id="C3n-XD-7yX"/>
+                                                <constraint firstItem="SD0-MO-1Yd" firstAttribute="trailing" secondItem="Ldh-DM-oNg" secondAttribute="trailing" id="KA5-ah-Y2m"/>
+                                                <constraint firstItem="GBx-K1-VZh" firstAttribute="firstBaseline" secondItem="SD0-MO-1Yd" secondAttribute="firstBaseline" id="Q4F-Oa-g2N"/>
                                                 <constraint firstItem="BkF-GX-PxZ" firstAttribute="leading" secondItem="orU-QX-kg2" secondAttribute="leadingMargin" constant="-20" id="ZLZ-W3-uM2"/>
                                                 <constraint firstItem="fAE-m8-vqu" firstAttribute="top" secondItem="Ldh-DM-oNg" secondAttribute="bottom" constant="20" id="aMS-dU-EtB"/>
                                                 <constraint firstItem="Ldh-DM-oNg" firstAttribute="trailing" secondItem="bbf-ti-aCM" secondAttribute="trailing" id="ctJ-5O-06L"/>
                                                 <constraint firstItem="BkF-GX-PxZ" firstAttribute="top" secondItem="fAE-m8-vqu" secondAttribute="bottom" constant="8" id="eBe-BH-Vzo"/>
                                                 <constraint firstItem="Ldh-DM-oNg" firstAttribute="top" secondItem="GBx-K1-VZh" secondAttribute="bottom" constant="8" id="eZU-Or-aev"/>
                                                 <constraint firstItem="GBx-K1-VZh" firstAttribute="leading" secondItem="orU-QX-kg2" secondAttribute="leadingMargin" id="hm9-Bq-zd5"/>
+                                                <constraint firstItem="SD0-MO-1Yd" firstAttribute="leading" secondItem="bbf-ti-aCM" secondAttribute="leading" id="kxG-xJ-9uz"/>
                                                 <constraint firstItem="bbf-ti-aCM" firstAttribute="bottom" secondItem="orU-QX-kg2" secondAttribute="bottomMargin" id="ltt-KH-fAS"/>
                                                 <constraint firstItem="Ldh-DM-oNg" firstAttribute="leading" secondItem="fAE-m8-vqu" secondAttribute="leading" id="wDb-r4-geF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="fAE-m8-vqu" id="wLk-9R-sSQ"/>
+                                            <outlet property="documentIdLabel" destination="SD0-MO-1Yd" id="LBe-c5-i1T"/>
                                             <outlet property="likeLabel" destination="bbf-ti-aCM" id="vtD-oM-84k"/>
                                             <outlet property="userEmailLabel" destination="GBx-K1-VZh" id="seM-Os-hPd"/>
                                             <outlet property="userImageView" destination="Ldh-DM-oNg" id="pZO-Hr-OJv"/>

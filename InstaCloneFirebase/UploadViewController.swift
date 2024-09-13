@@ -2,7 +2,7 @@
 //  UploadViewController.swift
 //  InstaCloneFirebase
 //
-//  Created by Jazmin on 10/09/24.
+//  Created by Porfirio on 10/09/24.
 //
 
 import UIKit
@@ -66,7 +66,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                             let imageUrl = url?.absoluteString
                             
                             //DATABASE
-//Se crea el Firestore y despues una refencia de DocumentReference y se agrega los valores dentro de un diccionario de tipo [String : Any]
+
                             let firestoreDatabase = Firestore.firestore()
                             var firestoreReference : DocumentReference? = nil
                             let firestorePost = ["imageUrl" : imageUrl!, "postedBy" : Auth.auth().currentUser!.email!, "postComment" : self.commentText.text!, "date" : FieldValue.serverTimestamp(), "likes" : 0] as [String : Any]
