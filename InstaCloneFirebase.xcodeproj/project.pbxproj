@@ -92,18 +92,42 @@
 			children = (
 				F1D07D152C8F4F5000296170 /* AppDelegate.swift */,
 				F1D07D172C8F4F5000296170 /* SceneDelegate.swift */,
-				F1D07D192C8F4F5000296170 /* ViewController.swift */,
-				F1E984C62C90A8EB00380F34 /* FeedViewController.swift */,
-				F1E984CE2C93502B00380F34 /* FeedCellTableViewCell.swift */,
-				F1E984C82C90A94A00380F34 /* UploadViewController.swift */,
-				F1E984CA2C90A96C00380F34 /* SettingsViewController.swift */,
-				F1D07D1B2C8F4F5000296170 /* Main.storyboard */,
+				F1E984FC2CAB154100380F34 /* Model */,
+				F1E984FD2CAB155200380F34 /* View */,
+				F1E984FB2CAB152500380F34 /* Controller */,
 				F1D07D1E2C8F4F5200296170 /* Assets.xcassets */,
 				F1D07D202C8F4F5200296170 /* LaunchScreen.storyboard */,
 				F1D07D232C8F4F5200296170 /* Info.plist */,
 				F1D07D292C8F6D3F00296170 /* GoogleService-Info.plist */,
 			);
 			path = InstaCloneFirebase;
+			sourceTree = "<group>";
+		};
+		F1E984FB2CAB152500380F34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1D07D192C8F4F5000296170 /* ViewController.swift */,
+				F1E984C62C90A8EB00380F34 /* FeedViewController.swift */,
+				F1E984C82C90A94A00380F34 /* UploadViewController.swift */,
+				F1E984CA2C90A96C00380F34 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1E984FC2CAB154100380F34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1E984CE2C93502B00380F34 /* FeedCellTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1E984FD2CAB155200380F34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1D07D1B2C8F4F5000296170 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
